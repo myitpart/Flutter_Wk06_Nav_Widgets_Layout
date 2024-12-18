@@ -80,6 +80,45 @@ class NavNamedRoute extends StatelessWidget {
               },
               child: Text('Go to Page 3'),
             ),
+
+            InkWell(
+              onTap: () => Navigator.pushNamed(context, '/page3'),
+              child: Container(
+                width: 200,
+                margin: EdgeInsets.all(10),
+                padding: EdgeInsets.all(8),
+                decoration: const BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.all(Radius.circular(10)),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Color(0xFFaaaaaa),
+                      spreadRadius: 2,
+                      blurRadius: 6,
+                      offset: Offset(0, 0),
+                    )
+                  ],
+                ),
+                alignment: Alignment.center,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.history,
+                      size: 30,
+                    ),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    const Text(
+                      textAlign: TextAlign.center,
+                      'History',
+                      style: TextStyle(fontSize: 20, color: Colors.white),
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
