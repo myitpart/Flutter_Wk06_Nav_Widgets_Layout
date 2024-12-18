@@ -1,6 +1,8 @@
 # CS ws cloned from flutter_app_template
 
 A new Flutter project template, Dec 2024.
+- Widgets and layout
+- Bottom Nav Bar
 - assets/images and .yaml
 - main.dart and my_homepage.dart
 
