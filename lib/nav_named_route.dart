@@ -1,3 +1,4 @@
+import 'package:cs_workshop_widgets_layout/my_homepage.dart';
 import 'package:flutter/material.dart';
 
 // Define your pages here (replace with your actual pages)
@@ -52,7 +53,8 @@ class NavNamedRoute extends StatelessWidget {
       appBar: AppBar(
         title: Text('Main Page'),
       ),
-      body: Center(
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [
             // Item 1
@@ -76,9 +78,22 @@ class NavNamedRoute extends StatelessWidget {
             // Item 3
             ElevatedButton(
               onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => MyHomePage(title: 'title'),
+                    ));
                 Navigator.pushNamed(context, '/page3');
               },
               child: Text('Go to Page 3'),
+            ),
+            const Card(
+              color: Colors.amberAccent,
+              child: ListTile(
+                leading: Icon(Icons.hub_sharp),
+                title: Text('Dust PM2.5 report'),
+                trailing: Icon(Icons.arrow_forward_ios),
+              ),
             ),
 
             InkWell(

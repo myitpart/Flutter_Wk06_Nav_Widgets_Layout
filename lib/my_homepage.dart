@@ -1,3 +1,4 @@
+import 'package:cs_workshop_widgets_layout/bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -128,7 +129,13 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => BottomNavBarPage(title: 'title'),
+                    ));
+              },
               child: Text('OK Submit'),
             ),
           ],

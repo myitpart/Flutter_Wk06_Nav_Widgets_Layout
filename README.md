@@ -1,6 +1,6 @@
 # CS ws cloned from flutter_app_template
 
-A new Flutter project template, Dec 2024.
+A new Flutter project template, Dec 2024 ws.
 - Widgets and layout
 - Bottom Nav Bar
 - Named Routes (3 btns ad)
