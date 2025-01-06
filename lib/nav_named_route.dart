@@ -78,14 +78,14 @@ class NavNamedRoute extends StatelessWidget {
             // Item 3
             ElevatedButton(
               onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => MyHomePage(title: 'title'),
-                    ));
-                Navigator.pushNamed(context, '/page3');
+                // Navigator.push(
+                //     context,
+                //     MaterialPageRoute(
+                //       builder: (context) => MyHomePage(title: 'title'),
+                //     ));
+                Navigator.pushNamed(context, '/aboutUsPage');
               },
-              child: Text('Go to Page 3'),
+              child: Text('AboutUs Page3 '),
             ),
             const Card(
               color: Colors.amberAccent,
@@ -96,44 +96,44 @@ class NavNamedRoute extends StatelessWidget {
               ),
             ),
 
-            InkWell(
-              onTap: () => Navigator.pushNamed(context, '/page3'),
-              child: Container(
-                width: 200,
-                margin: EdgeInsets.all(10),
-                padding: EdgeInsets.all(8),
-                decoration: const BoxDecoration(
-                  color: Colors.blue,
-                  borderRadius: BorderRadius.all(Radius.circular(10)),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Color(0xFFaaaaaa),
-                      spreadRadius: 2,
-                      blurRadius: 6,
-                      offset: Offset(0, 0),
-                    )
-                  ],
-                ),
-                alignment: Alignment.center,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.history,
-                      size: 30,
-                    ),
-                    SizedBox(
-                      width: 20,
-                    ),
-                    const Text(
-                      textAlign: TextAlign.center,
-                      'History',
-                      style: TextStyle(fontSize: 20, color: Colors.white),
-                    ),
-                  ],
-                ),
-              ),
-            ),
+            // InkWell(
+            //   onTap: () => Navigator.pushNamed(context, '/page3'),
+            //   child: Container(
+            //     width: 200,
+            //     margin: EdgeInsets.all(10),
+            //     padding: EdgeInsets.all(8),
+            //     decoration: const BoxDecoration(
+            //       color: Colors.blue,
+            //       borderRadius: BorderRadius.all(Radius.circular(10)),
+            //       boxShadow: [
+            //         BoxShadow(
+            //           color: Color(0xFFaaaaaa),
+            //           spreadRadius: 2,
+            //           blurRadius: 6,
+            //           offset: Offset(0, 0),
+            //         )
+            //       ],
+            //     ),
+            //     alignment: Alignment.center,
+            //     child: Row(
+            //       mainAxisAlignment: MainAxisAlignment.center,
+            //       children: [
+            //         Icon(
+            //           Icons.history,
+            //           size: 30,
+            //         ),
+            //         SizedBox(
+            //           width: 20,
+            //         ),
+            //         const Text(
+            //           textAlign: TextAlign.center,
+            //           'History',
+            //           style: TextStyle(fontSize: 20, color: Colors.white),
+            //         ),
+            //       ],
+            //     ),
+            //   ),
+            // ),
           ],
         ),
       ),

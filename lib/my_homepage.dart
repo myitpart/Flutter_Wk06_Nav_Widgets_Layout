@@ -1,3 +1,4 @@
+import 'package:cs_workshop_widgets_layout/about_us_page.dart';
 import 'package:cs_workshop_widgets_layout/bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -37,21 +38,23 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
-            Row(
-              children: [
-                Image.network('https://picsum.photos/250?image=9', height: 100),
-                Image.network('https://picsum.photos/250?image=9', height: 100),
-                Image.network('https://picsum.photos/250?image=9', height: 100),
-              ],
-            ),
-            Row(
-              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Icon(Icons.calendar_month, size: 80),
-                Icon(Icons.ev_station, size: 80),
-                Icon(Icons.wallet, size: 80),
-              ],
-            ),
+
+            // Row(
+            //   spacing: 10,
+            //   children: [
+            //     Image.network('https://picsum.photos/250?image=9', height: 100),
+            //     Image.network('https://picsum.photos/250?image=9', height: 100),
+            //     Image.network('https://picsum.photos/250?image=9', height: 100),
+            //   ],
+            // ),
+            // Row(
+            //   // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //   children: [
+            //     Icon(Icons.calendar_month, size: 80),
+            //     Icon(Icons.ev_station, size: 80),
+            //     Icon(Icons.wallet, size: 80),
+            //   ],
+            // ),
             Row(
               children: [
                 Padding(
@@ -111,33 +114,45 @@ class _MyHomePageState extends State<MyHomePage> {
                 style: TextStyle(fontSize: 20, color: Colors.white),
               ),
             ),
-            const TextField(
-              decoration: InputDecoration(
-                // กำหนดสไตล์รูปแบบ
-                border: OutlineInputBorder(), // มีเส้นกรอบ
-                labelText: 'User Name', // ข้อความกำกับ
-                hintText: 'Enter Your Name', // ข้อความแนะนำ (Hint)
-              ),
-            ),
-            SizedBox(height: 10, width: 10),
-            const TextField(
-              obscureText: true, // สำหรับกรอกรหัสผ่าน
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'Password',
-                hintText: 'Enter Password',
-              ),
-            ),
+
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => BottomNavBarPage(title: 'title'),
-                    ));
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => AboutUsPage(),
+                  ),
+                );
               },
-              child: Text('OK Submit'),
+              child: const Text('AboutUs Page'),
             ),
+            // const TextField(
+            //   decoration: InputDecoration(
+            //     // กำหนดสไตล์รูปแบบ
+            //     border: OutlineInputBorder(), // มีเส้นกรอบ
+            //     labelText: 'User Name', // ข้อความกำกับ
+            //     hintText: 'Enter Your Name', // ข้อความแนะนำ (Hint)
+            //   ),
+            // ),
+            // SizedBox(height: 10, width: 10),
+            // const TextField(
+            //   obscureText: true, // สำหรับกรอกรหัสผ่าน
+            //   decoration: InputDecoration(
+            //     border: OutlineInputBorder(),
+            //     labelText: 'Password',
+            //     hintText: 'Enter Password',
+            //   ),
+            // ),
+            // ElevatedButton(
+            //   onPressed: () {
+            //     Navigator.push(
+            //         context,
+            //         MaterialPageRoute(
+            //           builder: (context) => BottomNavBarPage(title: 'title'),
+            //         ));
+            //   },
+            //   child: Text('OK Submit'),
+            // ),
           ],
         ),
       ),

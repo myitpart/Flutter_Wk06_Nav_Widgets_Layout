@@ -1,3 +1,4 @@
+import 'package:cs_workshop_widgets_layout/about_us_page.dart';
 import 'package:cs_workshop_widgets_layout/bottom_nav_bar.dart';
 import 'package:cs_workshop_widgets_layout/nav_named_route.dart';
 import 'package:flutter/material.dart';
@@ -48,10 +49,12 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => NavNamedRoute(),
+        '/': (context) => MyHomePage(title: 'Nav System'),
+        // '/': (context) => NavNamedRoute(),
         '/page1': (context) => Page1a(),
         '/page2': (context) => Page2a(),
-        '/page3': (context) => Page3a(),
+        // '/page3': (context) => Page3a(),
+        '/aboutUsPage': (context) => AboutUsPage(),
       },
       // home: const MyHomePage(title: 'Home Page'), // NO NO
     );

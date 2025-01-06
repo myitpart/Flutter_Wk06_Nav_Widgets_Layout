@@ -2,7 +2,7 @@
 
 Flutter project template, Dec 2024 WS.
 - Bottom Navigation Bar
-- Named Routes (3 btns)
+- Named Routes (3 btns) ->page1,2,aboutus
 - Widgets and layout
 - assets/images and .yaml
 - main.dart and my_homepage.dart
