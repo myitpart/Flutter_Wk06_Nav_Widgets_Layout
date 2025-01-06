@@ -159,6 +159,13 @@ class _MyHomePageState extends State<MyHomePage> {
               child: const Text('Login Enter Name (welcome)'),
             ),
 
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/welcome');
+              },
+              child: const Text(' welcome page using pushNamed'),
+            ),
+
             // const TextField(
             //   decoration: InputDecoration(
             //     // กำหนดสไตล์รูปแบบ

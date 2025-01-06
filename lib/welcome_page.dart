@@ -66,7 +66,7 @@ class _WelcomePageState extends State<WelcomePage> {
                     context,
                     MaterialPageRoute(
                       builder: (context) => DisplayPage(
-                        name: input, //  pass data to DisplayPage
+                        // name: input, //  pass data to DisplayPage
                         age: inputAge,
                       ),
                     ),
@@ -91,8 +91,11 @@ class _WelcomePageState extends State<WelcomePage> {
                   Navigator.pushAndRemoveUntil(
                     context,
                     MaterialPageRoute(
-                      // builder: (context) => DisplayPage(
-                      builder: (context) => BottomNavBarPage(),
+                      builder: (context) => DisplayPage(
+                        name: 'ksb',
+                        age: 18,
+                      ),
+                      // builder: (context) => BottomNavBarPage(),
                     ),
                     (route) => false,
                   );

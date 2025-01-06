@@ -1,12 +1,13 @@
 import 'package:cs_workshop_widgets_layout/about_us_page.dart';
 import 'package:cs_workshop_widgets_layout/bottom_nav_bar.dart';
 import 'package:cs_workshop_widgets_layout/nav_named_route.dart';
+import 'package:cs_workshop_widgets_layout/welcome_page.dart';
 import 'package:flutter/material.dart';
 import 'my_homepage.dart';
 import 'nav_named_route.dart';
 
-/*
-void main() {
+
+/* void main() {
   runApp(const MyApp());
 }
 
@@ -22,13 +23,13 @@ class MyApp extends StatelessWidget {
         appBarTheme: const AppBarTheme(color: Colors.greenAccent),
         useMaterial3: true,
       ),
-      // home: const MyHomePage(title: 'Home Page'),
+      home: const MyHomePage(title: 'Home Page'),
       // home: const BottomNavBarPage(title: 'Home Page'),
-      home: const NavNamedRoute(),
+      // home: const NavNamedRoute(),
     );
   }
-}
-*/
+} */
+
 
 void main() {
   runApp(const MyApp());
@@ -50,14 +51,18 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => MyHomePage(title: 'Nav System'),
-        // '/': (context) => BottomNavBarPage(title: 'BottomNavBar'),
-        // '/': (context) => NavNamedRoute(),
-        '/page1': (context) => Page1a(),
-        '/page2': (context) => Page2a(),
-        // '/page3': (context) => Page3a(),
         '/aboutUsPage': (context) => AboutUsPage(),
+        '/welcome': (context) => WelcomePage(),
       },
       // home: const MyHomePage(title: 'Home Page'), // NO NO
     );
   }
 }
+
+
+
+        // // '/': (context) => BottomNavBarPage(title: 'BottomNavBar'),
+        // // '/': (context) => NavNamedRoute(),
+        // '/page1': (context) => Page1a(),
+        // '/page2': (context) => Page2a(),
+        // // '/page3': (context) => Page3a(),

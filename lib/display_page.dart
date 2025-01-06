@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class DisplayPage extends StatefulWidget {
   final String? name;
   final int? age;
-  const DisplayPage({super.key, this.name, this.age});
+  const DisplayPage({super.key,this.age,  this.name});
   @override
   State<DisplayPage> createState() => _DisplayPageState();
 }
