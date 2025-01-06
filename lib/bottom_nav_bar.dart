@@ -1,13 +1,15 @@
 // Bottom Navigation Bar including 3 pages
 // must be stateful because of updateing index tab
 
+import 'package:cs_workshop_widgets_layout/about_us_page_for_bottomnavbar.dart';
 import 'package:cs_workshop_widgets_layout/my_homepage.dart';
+import 'package:cs_workshop_widgets_layout/welcome_page.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavBarPage extends StatefulWidget {
-  const BottomNavBarPage({super.key, required this.title});
+  const BottomNavBarPage({super.key});
 
-  final String title;
+  // final String title;
 
   @override
   State<BottomNavBarPage> createState() => _BottomNavBarPageState();
@@ -19,8 +21,9 @@ class _BottomNavBarPageState extends State<BottomNavBarPage> {
   static const List<Widget> _widgetPages = [
     // Text('Home'),
     MyHomePage(title: 'Home'),
-    Page2(),
-    Page1(),
+    WelcomePage(),
+    AboutUsPageForBottomNavBar(),
+    // Page1(),
     // Text('Search'),
     Text('Profile'),
   ];
@@ -35,7 +38,7 @@ class _BottomNavBarPageState extends State<BottomNavBarPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text('myapp'),
       ),
       body: Center(
         child: _widgetPages.elementAt(_selectedIndex),

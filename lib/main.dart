@@ -50,6 +50,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => MyHomePage(title: 'Nav System'),
+        // '/': (context) => BottomNavBarPage(title: 'BottomNavBar'),
         // '/': (context) => NavNamedRoute(),
         '/page1': (context) => Page1a(),
         '/page2': (context) => Page2a(),

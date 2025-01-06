@@ -1,5 +1,6 @@
 import 'package:cs_workshop_widgets_layout/about_us_page.dart';
 import 'package:cs_workshop_widgets_layout/bottom_nav_bar.dart';
+import 'package:cs_workshop_widgets_layout/welcome_page.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -26,6 +27,25 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         // backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.shopping_cart),
+            onPressed: () {
+              debugPrint('leading icon pressed');
+            },
+          ),
+          IconButton(
+            icon: const Icon(Icons.info),
+            onPressed: () {
+              debugPrint('leading icon pressed');
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => AboutUsPage(),
+                  ));
+            },
+          ),
+        ],
       ),
       body: Center(
         child: Column(
@@ -126,6 +146,19 @@ class _MyHomePageState extends State<MyHomePage> {
               },
               child: const Text('AboutUs Page'),
             ),
+
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => WelcomePage(),
+                  ),
+                );
+              },
+              child: const Text('Login Enter Name (welcome)'),
+            ),
+
             // const TextField(
             //   decoration: InputDecoration(
             //     // กำหนดสไตล์รูปแบบ
