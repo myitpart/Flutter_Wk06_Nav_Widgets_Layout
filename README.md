@@ -1,7 +1,7 @@
 # CS Ws cloned from flutter_app_template
 
 Flutter project template, Dec 2024 WS.
-- Bottom Navigation Bar
+- Bottom Navigation Bar, 7 Jan
 - Named Routes (3 btns) ->page1,2,aboutus,DisplayPage
 - Widgets and layout
 - assets/images and .yaml
@@ -11,5 +11,4 @@ Flutter project template, Dec 2024 WS.
 
 A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
