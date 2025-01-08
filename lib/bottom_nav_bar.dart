@@ -25,7 +25,7 @@ class _BottomNavBarPageState extends State<BottomNavBarPage> {
     AboutUsPageForBottomNavBar(),
     // Page1(),
     // Text('Search'),
-    Text('Profile'),
+    // Text('Profile'),
   ];
 
   void _onItemTapped(int index) {

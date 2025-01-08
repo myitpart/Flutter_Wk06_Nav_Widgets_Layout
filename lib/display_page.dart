@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
 class DisplayPage extends StatefulWidget {
-  final String? name;
+  final String name;
   final int? age;
-  const DisplayPage({super.key,this.age,  this.name});
+
+  const DisplayPage({super.key, required this.name, this.age});
+  // const DisplayPage({super.key,this.age,  this.name});
   @override
   State<DisplayPage> createState() => _DisplayPageState();
 }
@@ -14,7 +16,7 @@ class _DisplayPageState extends State<DisplayPage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.amberAccent,
-        title: const Text('Disply Page'),
+        title: const Text('Display Page'),
       ),
       body: Center(
         child: Column(
@@ -29,17 +31,27 @@ class _DisplayPageState extends State<DisplayPage> {
             SizedBox(
               height: 20,
             ),
-            ElevatedButton(
+            (Navigator.canPop(context)) ? ElevatedButton(
               onPressed: () {
-                if (Navigator.canPop(context)) {
                   Navigator.pop(context);
-                }
+
               },
               child: Text(
                 'Back',
                 style: TextStyle(fontSize: 18),
               ),
-            ),
+            ):const SizedBox.shrink(),
+            // ElevatedButton(
+            //   onPressed: () {
+            //     if (Navigator.canPop(context)) {
+            //       Navigator.pop(context);
+            //     }
+            //   },
+            //   child: Text(
+            //     'Back',
+            //     style: TextStyle(fontSize: 18),
+            //   ),
+            // ),
           ],
         ),
       ),

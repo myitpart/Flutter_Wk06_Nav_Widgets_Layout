@@ -1,4 +1,5 @@
 import 'package:cs_workshop_widgets_layout/bottom_nav_bar.dart';
+import 'package:cs_workshop_widgets_layout/display_page_stl.dart';
 import 'package:flutter/material.dart';
 
 import 'display_page.dart';
@@ -66,7 +67,7 @@ class _WelcomePageState extends State<WelcomePage> {
                     context,
                     MaterialPageRoute(
                       builder: (context) => DisplayPage(
-                        // name: input, //  pass data to DisplayPage
+                        name: input,
                         age: inputAge,
                       ),
                     ),
@@ -91,11 +92,11 @@ class _WelcomePageState extends State<WelcomePage> {
                   Navigator.pushAndRemoveUntil(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => DisplayPage(
-                        name: 'ksb',
-                        age: 18,
-                      ),
-                      // builder: (context) => BottomNavBarPage(),
+                      // builder: (context) => DisplayPage(
+                      //   name: 'ksb',
+                      //   age: 18,
+                      // ),
+                      builder: (context) => BottomNavBarPage(),
                     ),
                     (route) => false,
                   );
