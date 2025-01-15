@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 // import '../../core/constants/app_defaults.dart';
 
 class AboutUsPageForBottomNavBar extends StatelessWidget {
+  static final String aboutPage = 'aboutWithNavBar';
   const AboutUsPageForBottomNavBar({super.key});
 
   @override

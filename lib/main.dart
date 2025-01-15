@@ -1,5 +1,7 @@
 import 'package:cs_workshop_widgets_layout/about_us_page.dart';
+import 'package:cs_workshop_widgets_layout/about_us_page_for_bottomnavbar.dart';
 import 'package:cs_workshop_widgets_layout/bottom_nav_bar.dart';
+import 'package:cs_workshop_widgets_layout/my_template_page.dart';
 import 'package:cs_workshop_widgets_layout/nav_named_route.dart';
 import 'package:cs_workshop_widgets_layout/welcome_page.dart';
 import 'package:flutter/material.dart';
@@ -48,11 +50,13 @@ class MyApp extends StatelessWidget {
         appBarTheme: const AppBarTheme(color: Colors.greenAccent),
         useMaterial3: true,
       ),
-      initialRoute: '/',
+      // initialRoute: '/',
       routes: {
-        '/': (context) => MyHomePage(title: 'Nav System'),
+        // '/': (context) => MyHomePage(title: 'Nav System'),
+        '/': (context) => MyTemplatePage(),
         '/aboutUsPage': (context) => AboutUsPage(),
         '/welcome': (context) => WelcomePage(),
+        AboutUsPageForBottomNavBar.aboutPage : (context) => AboutUsPageForBottomNavBar(),
       },
       // home: const MyHomePage(title: 'Home Page'), // NO NO
     );
